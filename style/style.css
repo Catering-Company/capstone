@@ -3,7 +3,11 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(93, 225, 230);
     width: 800px;
+    min-height: 100vh;
     margin: 0 auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0 10px;
 }
 
 header {
@@ -12,3 +16,14 @@ header {
     text-align: center;
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    color: plum;
+
+
+
+
+}
