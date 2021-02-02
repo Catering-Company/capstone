@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="../style/davestyle.css"/>
     </head>
 
-<body>
+<body onload="myMove()">
     <!-- Navigation top bar for all pages-->
     <div class="nav-bar">
         <a href="./homepage.html" class="nav-bar-blue"><p>Home</p></a>
@@ -35,9 +35,32 @@
         items like idli, dosa and bonda. While some vendors streamline the recipes of popular dishes to sell them on the street, several restaurants have taken 
         their inspiration from the street food of India.
         </p>
+     
+        <!-- Link animates on load (see body tag)-->     
+        <div class="container">
+            <div id ="animate">
+                <p><h3><a href="./aboutus.html" class="plum-link">Get in touch today to see how we can meet your catering requirements.</a></h3></p>
+            </div>
+        </div>
 
-       <p><h3><a href="./aboutus.html" class="plum-link">Get in touch today to see how we can meet your catering requirements.</a></h3></p>
-       
+        <script>
+            function myMove() {
+                var elem = document.getElementById("animate");   
+                var pos = -800;
+                var id = setInterval(frame, 5);
+                function frame() {
+                    if (pos == 0) {
+                        clearInterval(id);
+                    } else {
+                    pos++; 
+                    elem.style.left = pos + "px"; 
+                    }
+                }
+            }
+        </script>
+
+        <div><br><br><br><br></div>
+        
     </div>
     
     <!-- footer for all pages-->

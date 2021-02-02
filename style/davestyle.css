@@ -68,3 +68,15 @@ footer {
 .plum-link {
     color: plum;
 }
+
+
+.container {
+    width: 800px;
+    position: relative;
+    /* background: yellow; */
+  }
+  #animate {
+    width: 800px;
+    position: absolute;
+    /* background-color: red; */
+  }
