@@ -8,6 +8,9 @@ body {
     border-left: 1px solid black;
     border-right: 1px solid black;
     padding: 0 10px;
+    
+    
+
     /* background-image: url(../images/saladanpita.jpg); */
     
     
@@ -16,6 +19,10 @@ body {
 header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+}
+
+a {
+    color: white;
 }
 
 footer {
