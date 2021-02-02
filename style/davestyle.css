@@ -8,6 +8,9 @@ body {
     border-left: 1px solid black;
     border-right: 1px solid black;
     padding: 0 10px;
+    
+    
+
     /* background-image: url(../images/saladanpita.jpg); */
     
     
@@ -16,6 +19,11 @@ body {
 header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 footer {
@@ -28,6 +36,9 @@ footer {
 
 .main-text {
     color: black;
+    background-color: white;
+    text-align: center;
+
 }
 
 .nav-bar {
@@ -43,14 +54,17 @@ footer {
 .nav-bar-blue {
     background-color: rgb(93, 225, 230);
     /* border: 2px solid white; */
-    width: 25%;
+    width: 20%;
     padding: 10px 0;
 }
 
 .nav-bar-pink {
     background-color: plum;
     /* border: 2px solid white; */
-    width: 25%;
+    width: 20%;
     padding: 10px 0;
 }
 
+.plum-link {
+    color: plum;
+}
