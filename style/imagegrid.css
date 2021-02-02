@@ -4,16 +4,21 @@
 .column {
     float: left;
     width: 30%;
-    padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+
   }
   
   .column img {
+    vertical-align: left;
     margin-top: 12px;
   }
   
   /* Clear floats after the columns */
-  .row:after {
+  row:after {
     content: "";
     display: table;
     clear: both;
   }
+  
