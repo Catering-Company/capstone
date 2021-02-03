@@ -3,16 +3,17 @@
     <!-- Meta data in head section NOT BANNERS HEADLINES ETC!-->
     <head>
         <title>Capstone Meals on Wheels</title>
-        <link rel="stylesheet" type="text/css" href="../style/style.css"/>
+        <link rel="stylesheet" type="text/css" href="../style/davestyle.css"/>
     </head>
 
-<body>
+<body onload="myMove()">
     <!-- Navigation top bar for all pages-->
     <div class="nav-bar">
-        <p class="nav-bar-blue"><b>Home</b></p>
-        <p class="nav-bar-pink">Products</p>
-        <p class="nav-bar-blue">Meet the Team</p>
-        <p class="nav-bar-pink">Contact Us</p>
+        <a href="./homepage.html" class="nav-bar-blue"><p>Home</p></a>
+        <a href="./product_lines.html" class="nav-bar-pink"><p>Products</p></a>
+        <a href="./gallery.html" class="nav-bar-blue"><p>Gallery</p></a>
+        <a href="./aboutus.html" class="nav-bar-pink"><p>Meet the Team</p></a>
+        <a href="./aboutus.html" class="nav-bar-blue"><p>Contact Us</p></a>
     </div>
 
     <!-- header for all pages HEADER SECTION IS WHERE IMG BANNERS SHOULD BE -->
@@ -27,12 +28,39 @@
         if its just takeaway sandwiches, 
         drinks or snacks. we are committed to bringing fresh, healthy, mobile catering concepts to life, with the best and tastiest experience available.
         Our focus on natural, artisan and local sources sets our kitchen and event teams above the competition.</p>
-        <p> 
-
+        <p> Indian street food is as diverse as Indian cuisine. Every place has its own specialties to offer. Some of the more popular street food dishes 
+        are vada pav, misal pav, chole bhature, parathas, bhel puri, sev puri, gol gappa, aloo tikki, kebabs, tandoori chicken, samosas, kachori, idli, pohe, 
+        egg bhurji, pav bhaji, pulaw, pakora, lassi, kulfi and falooda. In Hindi speaking regions of India, street food is popularly known as nukkadwala food 
+        ("corner" food). In South India, foods like mirchi bajji, punugulu, and mokkajonna (corn roasted on coal) are common street foods, along with breakfast 
+        items like idli, dosa and bonda. While some vendors streamline the recipes of popular dishes to sell them on the street, several restaurants have taken 
+        their inspiration from the street food of India.
         </p>
+     
+        <!-- Link animates on load (see body tag)-->     
+        <div class="container">
+            <div id ="animate">
+                <p><h3><a href="./aboutus.html" class="plum-link">Get in touch today to see how we can meet your catering requirements.</a></h3></p>
+            </div>
+        </div>
 
-       <p><h3>Get in touch today to see how we can meet your catering requirements.</h3></p>
-       
+        <script>
+            function myMove() {
+                var elem = document.getElementById("animate");   
+                var pos = -800;
+                var id = setInterval(frame, 1);
+                function frame() {
+                    if (pos == 0) {
+                        clearInterval(id);
+                    } else {
+                    pos++; 
+                    elem.style.left = pos + "px"; 
+                    }
+                }
+            }
+        </script>
+
+        <div><br><br><br><br></div>
+
     </div>
     
     <!-- footer for all pages-->
@@ -41,33 +69,7 @@
         <p>Email: Info@capstoneltd.co.uk</p>
         <p>Address: Capstone Ltd, 43 Portland St, MCR, M1 2AQ</p>
     </footer>
-
     
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </html>
