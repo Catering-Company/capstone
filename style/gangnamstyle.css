@@ -47,7 +47,7 @@ header {
     background: linear-gradient(270deg, color:steelblue 0%, color:powderblue 40%, color:pink 100% );
     padding: 10px 36px;
     border-radius: 50px;
-    color: pink;
+    color: pink; 
 }
 
 main{
