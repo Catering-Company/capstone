@@ -1,10 +1,11 @@
 
-/* Edits image */
+/* Edits the size and position of the container the image is in*/
 .container {
   position: relative;
   width: 95%;
 }
 
+/* Defines image properties */
 .image {
   opacity: 1;
   display: block;
@@ -13,7 +14,7 @@
   transition: .5s ease;
   backface-visibility: hidden;
 }
-/* This controls the central bit*/
+/* Controls the overlayed text box position and size*/
 .middle {
   transition: .5s ease;
   opacity: 0;
@@ -21,14 +22,16 @@
   top: 30%;
   left: 35%;
   transform: translate(-25%, -25%);
-  -ms-transform: translate(-50%, -50%);
+  /*-ms-transform: translate(-50%, -50%);*/
   text-align: center;
 }
 
+/* opacity of images when hovered over */
 .container:hover .image {
   opacity: 0.3;
 }
 
+/* opacity of 'text box' when hovered over' */
 .container:hover .middle {
   opacity: 1;
 }
@@ -40,16 +43,28 @@
   padding: 16px 32px;
 }
 
+/* ---------------------------------------------------------------------------*/
+/* 'Boxes' images are in */
 
-
- /* Create two equal columns that floats next to each other */
-.column {
+ /* Create two equal columns that floats next to each other (that's why width is 50%) */
+.column2 {
   float: left;
   width: 50%;
-
 }
 
-.column img {
+/* all images in class column2 */
+.column2 img {
+  margin-top: 12px;
+}
+
+ /* Create one columns for images (that's why width is 1000%) */
+
+ .column1 {
+  float: left;
+  width: 100%;
+}
+
+.column1 img {
   margin-top: 12px;
 }
 
@@ -60,15 +75,6 @@
   clear: both;
 }
   
-.columntest {
-  float: left;
-  width: 100%;
-}
-
-.columntest img {
-  margin-top: 12px;
-}
-
 /* ---------------------------------------------------------------------------*/
 /* from davestyle.css; for general layout */
 
