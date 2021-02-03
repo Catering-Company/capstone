@@ -3,10 +3,32 @@
   <head>
     <link rel="stylesheet" href="../style/kirastylesheet.css">
     <title> Sample menus page</title>
-    <!-- The actual title-->
-   
+  
   </head>
- 
+ <!-- Javascript to preload images, not sure it does anything though-->
+ <!--specifies script and type-->
+ <script type="text/javascript">
+  // var functionally-scoped variable that is defined as an array of all page images
+    var images = new Array();
+    //function starts here to cache images
+    function preload(){
+    //this is a looping function to collect all images, of which there are 6
+        for (i=0; i < 6; i++){
+            // puts each new image into the array
+             images[i] = new Image();
+            //src is for an external url, so it can separately load the images
+            images[i].src = preload.arguments[i];
+    
+        }
+    
+    }
+    //here I define the images I want preloaded
+    preload("../images/background_breakfast.jpg", "../images/background_dinner.jpg", 
+    "../images/background_canape.jpg", "../images/background_streetfood.jpg", "../images/background_vegetarian.jpg", 
+    "../images/lunch_background.jpg");
+    //here the script is ended, and goes back to being HTML
+    </script>
+
   <body onload="myMove()">
     <!-- Navigation top bar for all pages-->
     <div class="nav-bar">
