@@ -12,16 +12,22 @@
   color: white;
   width: 100%;
   text-align: center;
+  /*this stickies the nav bar to the top of the page*/
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 .nav-bar-blue {
   background-color: rgb(93, 225, 230);
   width: 20%;
   padding: 10px 0;
+  
 }
 .nav-bar-pink {
   background-color: plum;
   width: 20%;
   padding: 10px 0;
+  
 }
 /*page title*/
  h1 {
@@ -54,7 +60,7 @@
    padding-top: 40px;
    border: 5px solid rgb(66, 7, 68);
    text-align: justify;
-   visibility: visible;
+   
    
  } 
  /*main menu download box*/
@@ -101,7 +107,6 @@
    padding-top: 40px;
    border: 5px solid rgb(66, 7, 68);
    text-align: justify;
-   visibility: visible;
  }
  
  /*box style for all that are left slanted*/
@@ -119,7 +124,7 @@
   padding-top: 40px;
   border: 5px solid rgb(66, 7, 68);
   text-align: justify;
-  visibility: visible;
+  
  }
 /*slightly different sized download button*/
 #clickbox_2 {
@@ -158,7 +163,6 @@
   color: black;
   transition-duration: 0.4s;
   margin-left: 30%;
-  visibility:visible;
   margin-top:60px;
   text-align: justify;
 }
