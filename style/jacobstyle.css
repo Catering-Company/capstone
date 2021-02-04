@@ -54,14 +54,15 @@ footer {
 .plum-link {
     color: plum;
 }
+
 .container {
     width: 800px;
     position: relative;
-    
+  
 }
-
 .dice-image {
     display:block ;
+    border: skyblue 3px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 40px;
