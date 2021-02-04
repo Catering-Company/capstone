@@ -12,19 +12,40 @@
   color: white;
   width: 100%;
   text-align: center;
+  /*this stickies the nav bar to the top of the page*/
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 .nav-bar-blue {
   background-color: rgb(93, 225, 230);
   width: 20%;
   padding: 10px 0;
+  
 }
 .nav-bar-pink {
   background-color: plum;
   width: 20%;
   padding: 10px 0;
+  
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: white;
+  color: rgb(93, 225, 230);
+  width: 800px;
+  min-height: 100vh;
+  margin: 0 auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 0 10px;
 }
 /*page title*/
- h1 {
+ h2 {
    color: rgb(11, 11, 75);
    text-align: center;
    font-size: xxx-large;
@@ -32,29 +53,27 @@
 
  }
  /*introductory paragraph*/
- p{
-     color: rgb(75, 11, 70);
-     margin-left: 14%;
-     margin-right: 14%;
-     font-family: Tahoma, sans-serif;
-     text-align: center;
+ p1{
+  color: rgb(75, 11, 70);
+  font-family: Tahoma, sans-serif;
+  text-align: center;
 
- }
+}
  /* top menu box only*/
  #menubox_1 {
-   width: 400px;
+   width: 720px;
    height: 300px;
    color:rgb(48, 7, 58);
    font-family: Garamond, sans-serif;
    margin-left: 5%;
    margin-right: 40%;
-   font-size: 25px;
-   padding-left: 50px;
-   padding-right: 500px;
+   font-size: 20px;
+   padding-left: 7px;
+   padding-right: 00px;
    padding-top: 40px;
    border: 5px solid rgb(66, 7, 68);
    text-align: justify;
-   visibility: visible;
+   
    
  } 
  /*main menu download box*/
@@ -63,7 +82,6 @@
    height: 23px;
    padding-left: 0.6cm;
    padding-top: 0.5cm;
-   padding-right: 0.5cm;
    padding-bottom: 0.4cm;
    border: 4px solid black;
    font-size: large;
@@ -73,75 +91,99 @@
    margin-left: 30%;
    visibility:visible;
    margin-top:60px;
+   margin-left: 60px;
    text-align: justify;
  }
  /*changes colour of download box*/
  #clickbox_1:hover {
-   background-color: #f1eaea;
+   background-color: black;
    color: rgb(73, 45, 45);
  }
  /*sets the location of canape image*/
  .canape{
-  margin-left: 900px;
+  margin-left: 700px;
   margin-right: 50px;
   padding-right: 2cm;
+  padding-top: 1cm;
 }
 /*box style for all that are right slanted*/
  #menubox_2 {
-   width: 500px;
+   width: 720px;
    height: 300px;
    color:rgb(48, 7, 58);
    font-family: Garamond, sans-serif;
-   margin-left: 10%;
-   margin-right: 5%;
+   margin-left: 0%;
+   margin-right: 0%;
    margin-top: 0.5cm;
-   font-size: 25px;
-   padding-left: 400px;
-   padding-right: 50px;
+   font-size: 20px;
+   padding-left: 0px;
+   padding-right: 10px;
    padding-top: 40px;
    border: 5px solid rgb(66, 7, 68);
    text-align: justify;
-   visibility: visible;
  }
  
  /*box style for all that are left slanted*/
  #menubox_3 {
-  width: 400px;
+  width: 720px;
   height: 300px;
   color:rgb(48, 7, 58);
   font-family: Garamond, sans-serif;
   margin-left: 5%;
   margin-right: 40%;
   margin-top: 0.5cm;
-  font-size: 25px;
-  padding-left: 50px;
-  padding-right: 500px;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 0px;
   padding-top: 40px;
   border: 5px solid rgb(66, 7, 68);
   text-align: justify;
-  visibility: visible;
+  
  }
 /*slightly different sized download button*/
 #clickbox_2 {
-  width: 108px;
+  width: 80px;
   height: 23px;
   padding-left: 0.6cm;
   padding-top: 0.5cm;
-  padding-right: 0.5cm;
+  padding-right: 1cm;
   padding-bottom: 0.4cm;
   border: 4px solid black;
   font-size: large;
   background-color: rgb(144, 126, 148);
   color: black;
   transition-duration: 0.4s;
-  margin-left: 30%;
   visibility:visible;
   margin-top:60px;
+  margin-left: 80px;
   text-align: justify;
 }
 
 #clickbox_2:hover {
-  background-color: #f1eaea;
+  background-color: black;
+  color: rgb(73, 45, 45);
+}
+/*differently positioned download button*/
+#clickbox_3 {
+  width: 80px;
+  height: 23px;
+  padding-left: 0.5cm;
+  padding-top: 0.5cm;
+  padding-right: 1cm;
+  padding-bottom: 0.4cm;
+  border: 4px solid black;
+  font-size: large;
+  background-color: rgb(144, 126, 148);
+  color: black;
+  transition-duration: 0.4s;
+  visibility:visible;
+  margin-top:60px;
+  margin-left: 470px;
+  text-align: justify;
+}
+
+#clickbox_3:hover {
+  background-color: black;
   color: rgb(73, 45, 45);
 }
 /*another different sized download button, for longer words*/
@@ -157,14 +199,13 @@
   background-color: rgb(144, 126, 148);
   color: black;
   transition-duration: 0.4s;
-  margin-left: 30%;
-  visibility:visible;
+  margin-left: 1.5cm;
   margin-top:60px;
   text-align: justify;
 }
 
 #clickbox_5:hover {
-  background-color: #e6d6d6;
+  background-color: black;
   color: rgb(194, 56, 56);
 }
 /*to make entire download button a hyperlink, and not just the text*/
@@ -180,4 +221,13 @@ footer {
   justify-content: space-between;
   font-size: small;
   color: plum;
+}
+/*from dave's style sheet to give a common style across the site*/
+.main-text {
+  color: black;
+  background-color: white;
+  text-align: center;
+}
+.plum-link {
+    color: plum;
 }
