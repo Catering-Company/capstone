@@ -2,7 +2,7 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: white;
-    background-image: E:\Git projects\capstone\images\asian-salad-l.jpg;
+    background-image: "E:\Git projects\capstone\images\asian-salad-l.jpg";
     color: rgb(93, 225, 230);
     width: 800px;
     min-height: 100vh;
